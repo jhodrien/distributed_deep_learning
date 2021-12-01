@@ -1,3 +1,6 @@
+# Example from Ray
+# https://docs.ray.io/en/latest/train/examples/train_fashion_mnist_example.html
+
 import argparse
 from typing import Dict
 

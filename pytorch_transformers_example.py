@@ -1,4 +1,8 @@
 # coding=utf-8
+
+# Example from Ray
+# https://docs.ray.io/en/latest/train/examples/transformers/transformers_example.html
+
 # This is a modified example originally from The HuggingFace Inc. team.
 # Modified by Matthew Deng.
 # Copyright 2021 The HuggingFace Inc. team. All rights reserved.

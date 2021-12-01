@@ -1,3 +1,6 @@
+# Example taken from Ray
+# https://docs.ray.io/en/latest/train/examples/tensorflow_mnist_example.html
+
 # This example showcases how to use Tensorflow with Ray Train.
 # Original code:
 # https://www.tensorflow.org/tutorials/distribute/multi_worker_with_keras

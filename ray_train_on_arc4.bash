@@ -6,5 +6,10 @@
 
 conda activate distributed_dl
 
-python tensorflow_mnist_example.py --num-workers 4
+#python tensorflow_mnist_example.py --num-workers 4
+#python tensorflow_linear_dataset_example.py --num-workers 4
+python tensorflow_tune_mnist_example.py --num-workers 4
+
+
+
 

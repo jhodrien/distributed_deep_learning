@@ -1,3 +1,6 @@
+# Example from Ray
+# https://docs.ray.io/en/latest/train/examples/train_linear_example.html
+
 import argparse
 
 import numpy as np

@@ -1,3 +1,6 @@
+# Example taken from Ray
+# https://docs.ray.io/en/latest/train/examples/tensorflow_linear_dataset_example.html
+
 import argparse
 
 import tensorflow as tf

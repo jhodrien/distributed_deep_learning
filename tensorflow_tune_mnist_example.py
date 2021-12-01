@@ -1,3 +1,6 @@
+# Example taken from Ray
+# https://docs.ray.io/en/latest/train/examples/tune_tensorflow_mnist_example.html
+
 import argparse
 
 import ray
