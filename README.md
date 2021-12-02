@@ -4,9 +4,7 @@ Examples of how to distribute deep learning on a High Performance Computer (HPC)
 
 [Ray Train](https://docs.ray.io/en/latest/train/train.html) handles the distributed bit, and [TensorFlow](https://www.tensorflow.org/tutorials/distribute/multi_worker_with_keras) or [PyTorch](https://pytorch.org/tutorials/beginner/dist_overview.html) do the deep learning. Example scripts are for the HPCs of ARC4 (SGE), JADE-2 (SLURM), and Bede (SLURM).  
 The Python environment can be recreated using:  
-```bash
-conda env create --name distributed_dl --file=distributed_dl.yml
-```
+
 
 ## Overview
 
@@ -15,4 +13,4 @@ HPCs often require multiple copies of the same program to be submitted to the cl
 Overcome with Ray Train
 Dask Job
 
-
+Install Python environments for each HPC using these instructions [here](https://github.com/lukeconibear/distributed_deep_learning/blob/main/install_python_environments.md).  
