@@ -1,6 +1,7 @@
 # Install Python environments
 
-Instructions to have your own local miniconda and the Python environments for each HPC. There are many alternatives too.  
+Instructions to have your own local miniconda and the Python environments for each HPC.  
+There are many other alternatives too.  
 
 ## ARC4
 
@@ -21,7 +22,7 @@ conda create --name tf_ray_arc4 --file tf_ray_arc4.txt
 
 # clone - pytorch (1.10) and ray
 conda create --name pytorch_ray_arc4 --file pytorch_ray_arc4.txt
-```
+
 # or
 
 # create new - tensorflow (2.7.0) and ray

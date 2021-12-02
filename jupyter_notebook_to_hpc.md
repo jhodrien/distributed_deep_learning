@@ -2,14 +2,11 @@
 
 Jupyter Notebooks are great for interactive data science.
 
+These instructions below follow the great guide from Pangeo [Interactive Jupyter/Dask on HPC](https://pangeo.io/setup_guides/hpc.html) and the excellent [video](https://www.youtube.com/embed/FXsgmwpRExM) from Dask creator, Matthew Rocklin.
 
-
-
-
-[Interactive Jupyter/Dask on HPC](https://pangeo.io/setup_guides/hpc.html)
-See the excellent [video](https://www.youtube.com/embed/FXsgmwpRExM) from Dask creator, Matthew Rocklin, below.
-- Create or edit the [`~/.config/dask/jobqueue.yaml`](https://github.com/lukeconibear/swd6_hpp/blob/main/docs/jobqueue.yaml) file within this repository.
-- Check the [`~/.config/dask/distributed.yaml`](https://github.com/lukeconibear/swd6_hpp/blob/main/docs/distributed.yaml) file with this repository.
+Both of the following files will need to be placed within `~/.config/dask`. Ensure they are the correct settings for you.  
+- [`jobqueue.yaml`](https://github.com/lukeconibear/distributed_deep_learning/blob/main/jobqueue.yaml).  
+- [`distributed.yaml`](https://github.com/lukeconibear/distributed_deep_learning/blob/main/distributed.yaml).  
 
 
 ```bash
