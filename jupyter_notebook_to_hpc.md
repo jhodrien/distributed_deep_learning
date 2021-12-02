@@ -2,9 +2,9 @@
 
 Jupyter Notebooks are great for interactive data science.
 
-These instructions below follow the great guide from Pangeo [Interactive Jupyter/Dask on HPC](https://pangeo.io/setup_guides/hpc.html) and the excellent [video](https://www.youtube.com/embed/FXsgmwpRExM) from Dask creator, Matthew Rocklin.
+These instructions below follow the great guide from Pangeo [Interactive Jupyter/Dask on HPC](https://pangeo.io/setup_guides/hpc.html) and the excellent [video](https://www.youtube.com/FXsgmwpRExM) from Dask creator, Matthew Rocklin.
 
-Both of the following files will need to be placed within `~/.config/dask`. Ensure they are the correct settings for you.  
+Both of the following files will need to be placed within your `~/.config/dask`. Ensure they are the correct settings for you.  
 - [`jobqueue.yaml`](https://github.com/lukeconibear/distributed_deep_learning/blob/main/jobqueue.yaml).  
 - [`distributed.yaml`](https://github.com/lukeconibear/distributed_deep_learning/blob/main/distributed.yaml).  
 
@@ -21,7 +21,7 @@ qlogin -l h_rt=04:00:00 -l h_vmem=12G
 # activate your python environment
 conda activate my_python_environment
 
-# echo back the ssh command to connect to this compute node
+# echo back the ssh command to connect to this compute node (can choose any ports)
 echo "ssh -N -L 2222:`hostname`:2222 -L 2727:`hostname`:2727 ${USER}@arc4.leeds.ac.uk"
 
 # launch a jupyter lab session on this compute node
