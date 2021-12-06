@@ -38,6 +38,13 @@ conda create -n pytorch_ray_arc4 pytorch torchvision torchaudio cudatoolkit=11.3
 conda activate pytorch_ray_arc4
 pip install -U ray
 pip install -U ray[tune]
+
+# create new - jax
+conda create -n jax python=3.8 cudatoolkit=11.2 cudatoolkit-dev=11.2 cudnn=8.2
+conda activate jax
+pip install -U jax
+pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_releases.html
+
 ```
 
 ## Bede
