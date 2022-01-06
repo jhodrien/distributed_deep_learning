@@ -1,6 +1,5 @@
 name: tf_ray_arc4
 channels:
-  - pytorch
   - conda-forge
   - defaults
 dependencies:

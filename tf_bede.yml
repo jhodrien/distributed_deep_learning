@@ -1,6 +1,5 @@
 name: tf_bede
 channels:
-  - https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda
   - https://opence.mit.edu
   - https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/
   - conda-forge
