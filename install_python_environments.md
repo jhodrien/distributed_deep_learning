@@ -16,15 +16,19 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 ### Conda environment
 
+#### Clone pre-created environments
+
 ```bash
 # clone - tensorflow 2.7.0 and ray
 conda env create --file tf_ray_arc4.yml
 
 # clone - pytorch 1.10 and ray
 conda env create --file pytorch_ray_arc4.yml
+```
 
-# or
+#### Create your own
 
+```bash
 # create new - tensorflow 2.7.0 and ray
 conda create -n tf_ray_arc4 -c conda-forge python==3.9.* cudatoolkit==11.2.* cudnn==8.1.*
 conda activate tf_ray_arc4
@@ -44,7 +48,6 @@ conda create -n jax python=3.8 cudatoolkit=11.2 cudatoolkit-dev=11.2 cudnn=8.2
 conda activate jax
 pip install -U jax
 pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_releases.html
-
 ```
 
 ## Bede
@@ -70,6 +73,8 @@ conda config --prepend channels https://opence.mit.edu
 
 ### Conda environment
 
+#### Clone pre-created environments
+
 ```bash
 # clone - tensorflow 2.7.0 and ray
 conda env create --file tf_bede.yml
@@ -79,9 +84,11 @@ conda env create --file pytorch_bede.yml
 
 # clone - pytorch 1.9.0, cuda 10.2, and pytorch_geometric 2.0.3
 conda env create --file pytorch_geometric_bede.yml
+```
 
-# or
+#### Create your own
 
+```bash
 # create an environment for pytorch
 conda create -n pytorch -c pytorch pytorch torchvision cudatoolkit=10.2
  
@@ -109,7 +116,14 @@ pip install torch-geometric
 
 ### Conda environment
 
+#### Clone pre-created environments
+
 ```bash
 ...
 ```
 
+#### Create your own
+
+```bash
+...
+```
