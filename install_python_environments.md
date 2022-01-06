@@ -17,15 +17,15 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ### Conda environment
 
 ```bash
-# clone - tensorflow (2.7.0) and ray
-conda create --name tf_ray_arc4 --file tf_ray_arc4.txt
+# clone - tensorflow 2.7.0 and ray
+conda env create --file tf_ray_arc4.yml
 
-# clone - pytorch (1.10) and ray
-conda create --name pytorch_ray_arc4 --file pytorch_ray_arc4.txt
+# clone - pytorch 1.10 and ray
+conda env create --file pytorch_ray_arc4.yml
 
 # or
 
-# create new - tensorflow (2.7.0) and ray
+# create new - tensorflow 2.7.0 and ray
 conda create -n tf_ray_arc4 -c conda-forge python==3.9.* cudatoolkit==11.2.* cudnn==8.1.*
 conda activate tf_ray_arc4
 pip install -U pip
@@ -71,11 +71,32 @@ conda config --prepend channels https://opence.mit.edu
 ### Conda environment
 
 ```bash
+# clone - tensorflow 2.7.0 and ray
+conda env create --file tf_bede.yml
+
+# clone - pytorch 1.10 and ray
+conda env create --file pytorch_bede.yml
+
+# clone - pytorch 1.9.0, cuda 10.2, and pytorch_geometric 2.0.3
+conda env create --file pytorch_geometric_bede.yml
+
+# or
+
 # create an environment for pytorch
 conda create -n pytorch -c pytorch pytorch torchvision cudatoolkit=10.2
  
 # create an environment for tensorflow
 conda create -n tf tensorflow
+
+# create an environment for pytorch geometric
+module load gcc
+conda create -n pytorch_geometric -c pytorch pytorch cudatoolkit=10.2
+conda activate pytorch_geometric
+# check the pytorch version, this happened to be 1.9.0
+# if different, update the URLs below
+pip install torch-scatter -f https://data.pyg.org/whl/torch-1.9.0+cu102.html
+pip install torch-sparse -f https://data.pyg.org/whl/torch-1.9.0+cu102.html
+pip install torch-geometric
 ```
 
 ## JADE-2
