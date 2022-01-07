@@ -83,6 +83,7 @@ conda env create --file tf_bede.yml
 conda env create --file pytorch_bede.yml
 
 # clone - pytorch 1.9.0, cuda 10.2, and pytorch_geometric 2.0.3
+module load gcc # require this for some of the libraries
 conda env create --file pytorch_geometric_bede.yml
 ```
 
