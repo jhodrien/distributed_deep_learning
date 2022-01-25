@@ -71,6 +71,16 @@ conda config --prepend channels https://public.dhe.ibm.com/ibmdl/export/pub/soft
 conda config --prepend channels https://opence.mit.edu
 ```
 
+This is what my `~/.condarc` ends up as:
+```bash
+channel_priority: flexible
+channels:
+  - https://opence.mit.edu
+  - https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/
+  - conda-forge
+  - defaults
+```
+
 ### Conda environment
 
 #### Clone pre-created environments
@@ -91,20 +101,20 @@ conda env create --file pytorch_geometric_bede.yml
 
 ```bash
 # create an environment for pytorch
-conda create -n pytorch -c pytorch pytorch torchvision cudatoolkit=10.2
+conda create -n pytorch pytorch torchvision cudatoolkit=10.2
  
 # create an environment for tensorflow
 conda create -n tf tensorflow
 
 # create an environment for pytorch geometric
 module load gcc
-conda create -n pytorch_geometric -c pytorch pytorch cudatoolkit=10.2
+conda create -n pytorch_geometric pytorch cudatoolkit=10.2
 conda activate pytorch_geometric
-# check the pytorch version, this happened to be 1.9.0
-# if different, update the URLs below
-pip install torch-scatter -f https://data.pyg.org/whl/torch-1.9.0+cu102.html
-pip install torch-sparse -f https://data.pyg.org/whl/torch-1.9.0+cu102.html
+
+pip install "torch-scatter<2.0.9"
+pip install torch-sparse
 pip install torch-geometric
+pip install torch-cluster
 ```
 
 ## JADE-2
