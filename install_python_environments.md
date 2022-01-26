@@ -111,7 +111,7 @@ module load gcc
 conda create -n pytorch_geometric pytorch cudatoolkit=10.2
 conda activate pytorch_geometric
 
-pip install "torch-scatter<2.0.9"
+pip install torch-scatter
 pip install torch-sparse
 pip install torch-geometric
 pip install torch-cluster
