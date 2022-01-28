@@ -23,6 +23,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 conda env create --file tf_ray_arc4.yml
 
 # clone - pytorch 1.10 and ray
+module load gnu/8.3.0
 conda env create --file pytorch_ray_arc4.yml
 ```
 
@@ -38,6 +39,7 @@ pip install -U ray
 pip install -U ray[tune]
 
 # create new - pytorch (1.10) and ray
+module load gnu/8.3.0
 conda create -n pytorch_ray_arc4 pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 conda activate pytorch_ray_arc4
 pip install -U ray
