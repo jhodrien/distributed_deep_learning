@@ -64,7 +64,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh
  
 # run miniconda
 sh Miniconda3-latest-Linux-ppc64le.sh -b -p $DIR/miniconda
-source miniconda/bin/activate
+source $DIR/miniconda/bin/activate
  
 # update conda and set channels
 conda update conda -y
